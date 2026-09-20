@@ -1,3 +1,4 @@
+// Registration Form Backend Functionality
 from flask import Flask, request, jsonify
 from flask_sqlalchemy import SQLAlchemy
 
@@ -20,3 +21,5 @@ class User(db.Model):
 # Create the database and the User table
 with app.app_context():
     db.create_all()
+
+
